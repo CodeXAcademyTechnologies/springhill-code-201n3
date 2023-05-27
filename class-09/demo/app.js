@@ -1,30 +1,31 @@
 'use strict'
 
-// Get the html element with id of "results" and assign to variable
+// Get the html element with id of "results" and assign to a variable
 const resultsContainer = document.getElementById("results");
 
 const mainBox = document.getElementById("main-box");
 
-// Function to handle event (in this case, when box is clicked)
+// Function to handle event (in this case, when a box is clicked)
+
 function handleClick(event) {
   // Get element that was clicked
-  let target = event.target;
-  // Create new <div> to hold result message
-  let resultElm = document.createElement("div");
+  let target = event.target
+  // Create new <div> to hold the message ("you clicked box 1")
+  let resultElement = document.createElement("div");
 
   // Check which box was clicked and write respective message in html
   if (target.id === "box-1") {
-    resultElm.textContent = "You clicked Box 1."
+    resultElement.textContent = "You clicked box 1."
   } else if (target.id === "box-2") {
-    resultElm.textContent = "You clicked Box 2."
+    resultElement.textContent = "You clicked box 2."
   } else if (target.id === "box-3") {
-    resultElm.textContent = "You clicked Box 3."
+    resultElement.textContent = "You clicked box 3."
   }
-  // Append the result message to the results container
-  resultsContainer.appendChild(resultElm);
+
+  resultsContainer.appendChild(resultElement);
 }
 
-// Event (Click) -> box-1 -> main-box -> resultsContainer -> document
+// Event (click) -> box-1 -> main-box -> resultsContainer -> document
 
-// Attach the click event listener to the main box
+// Attached the click event listener to the main
 mainBox.addEventListener("click", handleClick);
