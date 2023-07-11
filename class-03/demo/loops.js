@@ -36,7 +36,6 @@ while(condition){
 }
 */
 
-
 let myFavNum = 2;
 let userGuess = prompt('Guess my lucky number');
 
