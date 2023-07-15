@@ -1,7 +1,15 @@
-body {
-  background-color: green;
+figure {
+  height: 300px;
+  width: 500px;
+  background-color: pink
 }
 
-h1 {
+img {
+  height: 200px;
+}
+
+figcaption {
   font-size: 64px;
+  font-family: 'Lugrasimo', cursive;
+  background-color: aqua;
 }
