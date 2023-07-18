@@ -1,7 +1,7 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that 
+Write a function called sum() that
 1. takes in two numbers as arguments and then returns an array
 2. where the first element is the sum of those numbers
 3. and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
@@ -33,11 +33,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  let product = a * b;
+  let multString = `The product of ${a} and ${b} is ${product}.`
 
+  return [product, multString]
 }
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,11 +57,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+  let sumOfThree = sum(a, sum(b, c)[0])[0];
+  let productOfThree = multiply(a, multiply(b, c)[0])[0];
+  let sumStr = `${a} and ${b} and ${c} sum to ${sumOfThree}.`;
+  let productStr = `The product of ${a} and ${b} and ${c} is ${productOfThree}.`
 
+  return [sumOfThree, productOfThree, sumStr, productStr];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -76,12 +84,14 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+  let sumOfArray = sum(sumArr[0], sum(sumArr[1], sumArr[2])[0])[0];
+  let arrayStr = `${sumArr} was passed in as an array of numbers, and ${sumOfArray} is their sum.`
+  return [sumOfArray, arrayStr]
 }
 
 // Here is the test for sumArray(); uncomment it to run it
 
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -97,13 +107,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  let productOfArray = multiply(multArr[0], multiply(multArr[1], multArr[2])[0])[0];
+  let multArrayStr = `The numbers ${multArr} have a product of ${productOfArray}.`
+return [productOfArray, multArrayStr]
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
