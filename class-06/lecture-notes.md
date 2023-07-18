@@ -11,13 +11,13 @@
 - Functions that are stored in objects are referred to as methods
 
 ```javascript
-let myArr = ['Camilla', 27, true, 'Instructor'];
+let pokemon = ['pikachu', 250, false, 'electric'];
 
-let person = {
-  name: 'Camilla',
-  age: 27,
-  isRemote: true,
-  title: 'Instructor'
+let pokemon = {
+  name: 'pikachu',
+  hp: 250,
+  isEvolved: false,
+  type: 'electric'
 }
 ```
 
