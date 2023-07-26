@@ -1,0 +1,21 @@
+/* scrollable container */
+
+p {
+  width: 450px;
+  height: 300px;
+  overflow: auto;
+}
+
+button {
+  transition: 350ms;
+}
+
+button:hover {
+  background-color: blue;
+
+}
+
+footer {
+  height: 150px;
+  background-color: #444;
+}
