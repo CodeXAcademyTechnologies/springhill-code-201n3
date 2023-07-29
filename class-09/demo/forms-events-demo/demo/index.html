@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Forms and Events</title>
+  <link href="./styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<header>
+  <h1> Forms and Events</h1>
+</header>
+<main>
+
+<form id="my-form">
+<fieldset>
+  <legend>Fieldset Header<legend>
+<!--OPTION 1: label and input are siblings -->
+<!-- IMPORTANT - LABEL NEEDS A FOR ATTRIBUTE AND THE INPUT NEEDS AN ID ATTRIBUTE - MUST MATCH -->
+
+<!-- NAME ATTRIBUTE - HELPFUL LABEL OUR INPUT -->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="type something...">
+
+<!--OPTION 2: nest the input inside your label -->
+<label>Age:
+    <input type="number" name="age">
+  </label>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password">
+
+<label>Date:
+  <input type="month" name="date">
+</label>
+
+</fieldset>
+
+<fieldset>
+  <legend>Another fieldset</legend>
+  <button id='my-button' type="submit">Submit</button>
+</fieldset>
+</form>
+
+</main>
+  <script src="./app.js"></script>
+</body>
+
+</html>

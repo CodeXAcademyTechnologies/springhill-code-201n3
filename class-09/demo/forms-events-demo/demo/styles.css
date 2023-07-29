@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  /* margin-top: 800px; */
+  /* border: 3px solid blue; */
+  padding: 20px;
+  border: 1px solid red;
+}
+
+input {
+  display: block;
+  margin-bottom: 25px;
+  border: 1px solid blue;
+}
+
+fieldset {
+  border: 1px solid pink;
+}
+
+select {
+  display: block;
+  margin-bottom: 25px;
+}
+
+
+
