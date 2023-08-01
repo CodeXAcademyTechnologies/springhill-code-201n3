@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Salmon Cookies Solution</title>
+</head>
+
+<body>
+  <table id="table">
+    <thead id="table-header">
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+    <tfoot id="table-footer">
+    </tfoot>
+  </table>
+
+  <br>
+  <hr>
+
+  <form id="add-location-form">
+    <fieldset>
+      <legend>Add Location</legend>
+      <label>
+        Location Name:
+        <input type="text" name="locationName" placeholder="Enter the name of the location" required>
+      </label>
+      <label>
+        Location Minimum Customers:
+        <input type="number" name="minCust" placeholder="Enter the minimum amount of customers for the location" required>
+      </label>
+      <label>
+        Location Maximum Customers:
+        <input type="number" name="maxCust" placeholder="Enter the maximum amount of customers for the location" required>
+      </label>
+      <label>
+        Location Average Cookie Sale:
+        <input type="text" name="avgCookies" placeholder="Enter the average cookie sale for the location" required>
+      </label>
+      <button type="submit">Submit</button>
+    </fieldset>
+
+
+  </form>
+  <script src="app.js"></script>
+</body>
+
+</html>
